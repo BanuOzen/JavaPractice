@@ -3,11 +3,19 @@ package day07_Operators;
 public class Task1 {
     public static void main(String[] args) {
         int a = 10;
-        a+=5;
         int b = 15;
-        b-=5;
+        int c;
+
+        c=b;
+        b=a;
+        a=c;
+
+
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+
+
+
         
 
     }
