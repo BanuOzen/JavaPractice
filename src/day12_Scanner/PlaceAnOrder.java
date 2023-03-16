@@ -8,16 +8,18 @@ public class PlaceAnOrder {
 
         System.out.println("Enter the product name: ");
         String productName = scan.nextLine();
+
         System.out.println("Enter the price: ");
         double price=scan.nextDouble();
+
         System.out.println("Enter the quantity:");
         int quantity= scan.nextInt();
 
-        scan.nextLine();
         System.out.println("Enter their first name: ");
-        String firstName=scan.nextLine();
+        String firstName=scan.next();
 
-        System.out.println(firstName + " your order for " + quantity + " " +productName + " has been places. " + "Your total is " + (price + quantity));
+        System.out.println(firstName + " your order for " + quantity + " " +productName + " has been placed. " + "Your total is " +
+                (price + quantity));
 
     }
 }
