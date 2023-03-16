@@ -9,12 +9,17 @@ public class SpeedLimit {
 
         System.out.println("Enter current speed: ");
         int currentSpeed=scan.nextInt();
+        if(currentSpeed>0){
+            if(currentSpeed>speedLimit){
+                System.out.println("You are driving " + (currentSpeed-speedLimit)+ " mph over the limit.Slow down!");
+            }else{
+                System.out.println("Speed Limit");
+            }
 
-        if(currentSpeed>speedLimit){
-            System.out.println("You are driving " + (currentSpeed-speedLimit)+ " mph over the limit.Slow down!");
         }else{
-            System.out.println("Speed Limit");
+            System.out.println("Please enter valid value");
         }
+
 
 
 
