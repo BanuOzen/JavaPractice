@@ -11,14 +11,15 @@ public class Initials {
 
         System.out.println("Enter your last name:");
         String last = input.next();
+        input.close();
 
         char f = first.charAt(0);
         char l = last.charAt(0);
 
-        String initials= "" + f +"."+l;
+        String initials= f +"."+l;
 
         System.out.println("initials = " + initials);
-        input.close();
+
 
 
     }
