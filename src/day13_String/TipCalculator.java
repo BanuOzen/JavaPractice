@@ -8,16 +8,38 @@ public class TipCalculator {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter to split or No split(Yes or No):");
-        String split=scan.next();
+        String split=scan.next().toLowerCase();
 
         System.out.println("Enter to number of people : ");
         int people=scan.nextInt();
 
         System.out.println("Enter to check amount:");
-        double check=scan.nextDouble();
+        double amount=scan.nextDouble();
 
-        System.out.println("Enter to service quality:");
-        String quality= scan.next();
+        System.out.println("Enter to service quality:(Excellent/Great/Good/Fair/Poor)");
+        String quality= scan.next().toLowerCase();
+
+        double tipRate=(quality.equals("excellent"))?0.25 :// ternaries
+                (quality.equals("Great"))? 0.2:(quality.equals("good"))? 0.15:
+                        (quality.equals("fair"))?0.1:0.05;
+
+        double totalTip = amount * tipRate;
+        System.out.println("people = " + people);
+        System.out.println("amount = " + amount);
+        System.out.println("totalTip = " + totalTip);
+
+        if(split.equals("yes")){
+            System.out.println("Total per person: " + (amount/people));
+            System.out.println("Tip per person: " + (totalTip/people));
+        }
+        scan.close();
+
+
+
+
+
+
+
 
 
     }
