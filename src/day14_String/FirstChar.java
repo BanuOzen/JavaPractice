@@ -12,6 +12,7 @@ public class FirstChar {
 
         char firstCh=word.charAt(0);
 
+
         if(firstCh>='0'&& firstCh<='9'){
             System.out.println("First Character is digit");
         }else if(firstCh>='a' && firstCh<='z'){
