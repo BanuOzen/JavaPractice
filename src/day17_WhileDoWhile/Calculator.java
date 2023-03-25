@@ -10,6 +10,7 @@ public class Calculator {
             a-=b;
             count++;
 
+
         }
         System.out.println(count + " with a remainder of "+a);
 
