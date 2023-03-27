@@ -20,6 +20,7 @@ public class AreaAndPerimeter {
 
             System.out.println("Would you like to calculate another circle?");
             String answer = scan.next().toLowerCase();
+
             if(answer.equals("no")){
                 System.out.println("Thank you for using Cydeo Circle Calculator APP");
                 break;
