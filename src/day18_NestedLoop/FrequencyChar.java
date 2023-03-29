@@ -6,7 +6,7 @@ public class FrequencyChar {
         String result="";//a2b1c3d1
         for (int i = 0; i < str.length(); i++) {
 
-            char ch=str.charAt(i);//each character from string
+            char ch = str.charAt(i);//each character from string
             int count=0;
 
             for (int j = 0; j <str.length() ; j++) {//to find the frequency of each character
