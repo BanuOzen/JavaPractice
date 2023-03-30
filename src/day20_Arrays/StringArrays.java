@@ -10,13 +10,12 @@ public class StringArrays {
         for (int i = 0; i < studentsNames.length; i++) {
             String name = studentsNames[i];
             String reverse ="";
-
             for( int j = name.length()-1; j>=0; j--){
                 reverse += name.charAt(j);
             }
             System.out.println(reverse);
-        }
 
+        }
 
 
 
