@@ -1,6 +1,8 @@
 package day25_CustomMethodOverloading;
 
+import MyUtilities.ArrayMaxAndMinNum;
 import MyUtilities.ArrayMergeUtility;
+import MyUtilities.ArraysReverse;
 
 import java.util.Arrays;
 
@@ -33,6 +35,19 @@ public class Test {
         String[] arr8 = {"apple", "lemon", "orange"};
         String[] result4 = ArrayMergeUtility.merge(arr7,arr8);
         System.out.println(Arrays.toString(result4));
+
+
+        int[] array1 = {1,2,3,4,5};
+        int max1 = ArrayMaxAndMinNum.max(array1);
+        System.out.println(max1);
+
+        int[] ar = {1,2,3,4,5};
+        int[] reverse = ArraysReverse.reverse(ar);
+        System.out.println(Arrays.toString(reverse));
+
+        String[] arr9 = {"elma","limon","portakal"};
+        String[] reverseS = ArraysReverse.reverse(arr9);
+        System.out.println(Arrays.toString(reverseS));
 
 
 
