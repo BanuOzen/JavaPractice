@@ -1,6 +1,15 @@
 package day27_WrapperClasses;
 
+import java.util.Arrays;
+
 public class InsertElement {
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5};
+        int[] result = insertElement(arr,2,30);
+        System.out.println(Arrays.toString(result));
+
+    }
 
     public static int[] insertElement(int[] arr, int index, int element){
         if(index < 0 || index > arr.length){
