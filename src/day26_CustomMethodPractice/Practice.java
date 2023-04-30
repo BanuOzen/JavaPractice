@@ -2,18 +2,18 @@ package day26_CustomMethodPractice;
 
 public class Practice {
 
-    public static int sumOfTwoNumber(int num1, int num2){
+    public static int sum(int num1, int num2){
         return num1 + num2;
     }
 
-    public static double sumOfTwoNumber(double num1, double num2){
+    public static double sum(double num1, double num2){
        return num1 + num2;
     }
 
-    public static int subtraction(int num1, int num2){
+    public static int subtract(int num1, int num2){
         return num1 - num2;
     }
-    public static double subtraction(double num1, double num2){
+    public static double subtract(double num1, double num2){
         return num1 - num2;
     }
     
